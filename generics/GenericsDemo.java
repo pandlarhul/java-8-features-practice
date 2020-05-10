@@ -5,5 +5,14 @@ class GenericsDemo{
 		// show the type of 
 		System.out.println(iob.getob());
 		iob.showType();
+		int i = iob.getob();
+		Util.pln("int i :"+i);
+		
+		Gen<String> strob = new Gen<String>("String object");
+		strob.showType();
+
+		String str = strob.getob();
+		Util.pln(str);
   }
+
 }
